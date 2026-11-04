@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сижу, жду — Askar Vernyi</title>
+<style>
+  * { box-sizing: border-box; }
+
+  html {
+    background: #000;
+    color: #f2f2f2;
+  }
+
+  body {
+    margin: 0;
+    padding: 70px 25px 90px;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  main {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .stanza {
+    font-size: clamp(17px, 4vw, 21px);
+    line-height: 1.85;
+    white-space: pre-line;
+    margin: 0 0 48px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 1.8s ease forwards;
+  }
+
+  .stanza:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+
+  .stanza:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+
+  .stanza:nth-child(4) {
+    animation-delay: 2.4s;
+  }
+
+  .stanza:nth-child(5) {
+    animation-delay: 3.2s;
+  }
+
+  footer {
+    margin-top: 65px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 3px;
+    animation: appear 2s 4s both;
+  }
+
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stanza, footer {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+</head>
+
+<body>
+<main>
+
+<p class="stanza">Сижу, жду
+Звонка или пару строк.
+Хоть что-нибудь мне скажи,
+Хоть что-то мне напиши.</p>
+
+<p class="stanza">Вне бытия мысли разные,
+Их много со мною станется.
+Глядишь, и любовь останется,
+Печали навек оставят нас.</p>
+
+<p class="stanza">Воздушными замками полнятся
+События тайных замыслов.
+Там бьются до смерти в поте лица
+За сердце прекрасной красавицы.</p>
+
+<p class="stanza">И орды, орочьи полчища,
+Застигнут героя в тёмный час.
+Ему не позволено спать сейчас —
+Светом пронизано поприще.</p>
+
+<p class="stanza">Скажи мне хоть пару слов сейчас,
+Иль просто же напиши.
+В ловушке сознания в поздний час
+Желаю твоей души.</p>
+
+<footer>ASKAR VERNYI</footer>
+
+</main>
+</body>
+</html>
